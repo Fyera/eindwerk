@@ -1,7 +1,6 @@
 <?php include("includes/header.php");
   require_once('includes/database.php');
   $currentDate = date("U");
-  var_dump($currentDate);
   $error_message = "";
   if($session->is_signed_in()){
     redirect("index.php");
@@ -15,7 +14,6 @@
     if(!$user_found){
       $error_message = "Your username is incorrect";
     }else{
-      var_dump($user_found);
       $row = get_object_vars($user_found);
       $password_hash = $row['password'];
       if(password_verify($password,$password_hash)){
@@ -38,10 +36,9 @@
       <div class="col-xl-10 col-lg-12 col-md-9">
 
         <div class="card o-hidden border-0 card-custom shadow-lg my-5">
-          <div class="card-body p-0">
-            <!-- Nested Row within Card Body -->
+
             <div class="row">
-              <div class="col-lg-6 d-none d-lg-block"><img src="./img/hordevsalliance.png" alt="hordevsalliance"></div>
+              <div class="col-lg-6 d-none d-lg-block"><img class="img-fluid w-100" src="./img/hordevsalliance.png" alt="hordevsalliance"></div>
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">

@@ -48,17 +48,12 @@
   }
 ?>
 
-<div class="container px-5">
-    <!-- Outer Row -->
+<div class="container px-5 mb-5">
     <div class="row justify-content-center">
-
       <div class="col-xl-10 col-lg-12 col-md-9">
-
         <div class="card o-hidden border-0 card-custom shadow-lg my-5">
-          <div class="card-body p-0">
-            <!-- Nested Row within Card Body -->
             <div class="row">
-              <div class="col-lg-6 d-none d-lg-block"><img src="./img/hordevsalliance.png" alt="hordevsalliance"></div>
+              <div class="col-lg-6 d-none d-lg-block"><img class="img-fluid w-100"src="./img/hordevsalliance.png" alt="hordevsalliance"></div>
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
@@ -98,11 +93,7 @@
               </div>
             </div>
           </div>
-        </div>
-
       </div>
-
     </div>
-
   </div>
 <?php include("includes/footer.php") ?>

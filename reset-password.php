@@ -53,45 +53,41 @@ if(empty($selector) || empty($validator)){
 ?>
 
 <div class="container px-5">
-    <!-- Outer Row -->
-    <div class="row justify-content-center">
-
-      <div class="col-xl-10 col-lg-12 col-md-9">
-
-        <div class="card o-hidden border-0 card-custom shadow-lg my-5">
-          <div class="card-body p-0">
-            <!-- Nested Row within Card Body -->
-            <div class="row">
-              <div class="col-lg-6 d-none d-lg-block"><img src="./img/hordevsalliance.png" alt="hordevsalliance"></div>
-                <div class="col-lg-6">
-                <div class="p-5">
-                  <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">Reset Your Password?</h1>
-                  </div>
-                  <form method="post">
-                    <input type="hidden" name="selector" value="<?php echo $selector ?>" />
-                    <input type="hidden" name="validator" value="<?php echo $validator ?>" />
-                    <br /><br />
-                    <label><strong>Enter New Password:</strong></label><br />
-                    <input type="password" name="pass1" placeholder="Enter a new password..." required />
-                    <br /><br />
-                    <label><strong>Re-Enter New Password:</strong></label><br />
-                    <input type="password" name="pass2" placeholder="Repeat new password..." required/>
-                    <br /><br />
-                    <input type="submit" name="reset-password-submit" value="Reset Password" class="btn btn-primary" />
-                    <?php
-                    if(isset($_GET["reset"])){
-                      if($_GET["reset"]=="empty"){
-                        echo "<p class='text-red'>Please fill in your password both times.</p>";
-                      }elseif($_GET["reset"]=="pwdnotsame"){
-                          echo "<p class='text-red'>Your passwords don't match!</p>";
-                      }elseif($_GET["reset"]=="error"){
-                        echo "<p class='text-red'>Something went wrong. Please try again.</p>";
-                    }
-                    }
-                    ?>
+  <div class="row justify-content-center">
+    <div class="col-xl-10 col-lg-12 col-md-9">
+      <div class="card o-hidden border-0 card-custom shadow-lg my-5">
+        <div class="row">
+          <div class="col-lg-6 d-none d-lg-block">
+            <img class="img-fluid w-100" src="./img/hordevsalliance.png" alt="hordevsalliance">
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <div class="text-center">
+                <h1 class="h4 text-gray-900 mb-4">Reset Your Password?</h1>
+              </div>
+              <form method="post">
+                <input type="hidden" name="selector" value="<?php echo $selector ?>" />
+                <input type="hidden" name="validator" value="<?php echo $validator ?>" />
+                <br /><br />
+                <label><strong>Enter New Password:</strong></label><br />
+                <input type="password" name="pass1" placeholder="Enter a new password..." required />
+                <br /><br />
+                <label><strong>Re-Enter New Password:</strong></label><br />
+                <input type="password" name="pass2" placeholder="Repeat new password..." required/>
+                <br /><br />
+                <input type="submit" name="reset-password-submit" value="Reset Password" class="btn btn-primary" />
+                <?php
+                if(isset($_GET["reset"])){
+                  if($_GET["reset"]=="empty"){
+                    echo "<p class='text-red'>Please fill in your password both times.</p>";
+                  }elseif($_GET["reset"]=="pwdnotsame"){
+                    echo "<p class='text-red'>Your passwords don't match!</p>";
+                  }elseif($_GET["reset"]=="error"){
+                    echo "<p class='text-red'>Something went wrong. Please try again.</p>";
+                  }
+                }
+                ?>
                 </form>
-                </div>
               </div>
             </div>
           </div>
@@ -99,4 +95,5 @@ if(empty($selector) || empty($validator)){
       </div>
     </div>
   </div>
+</div>
 <?php include("includes/footer.php") ?>

@@ -3,7 +3,7 @@
         redirect('login.php');
     }
     $user_id=$_SESSION['user_id'];
-    $personas = Persona::find_all($user_id);
+    $personas = Persona::find_the_persona($user_id);
 
     // if($personas=""){
     //     redirect('create_persona.php');
@@ -12,6 +12,7 @@
 ?>
 
 <div class="container px-5" id="body-container">
+    <div class="py-4 px-5">
     <!-- Outer Row -->
     <div class="row justify-content-center">
         <div class="col-xl-10 col-lg-12 col-md-9">
@@ -44,6 +45,7 @@
             <br>
             <?php endforeach ?>
         </div>
+    </div>
     </div>
 </div>
 
