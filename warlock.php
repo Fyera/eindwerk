@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
 <div class="container px-5" id="body-container">
-    <header id="header" class="py-4 px-5">
+    <header id="header" class="py-4">
         <div class="primary-overlay">
             <div class="container">
                 <div class="row">
@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="row pt-3">
-                    <div class="col text-center">
+                    <div class="col text-center mx-5">
                         <br>
                         <p>In the face of demonic power, most heroes see death. Warlocks see only opportunity. Dominance is their aim, and they have found a path to it in the dark arts. These voracious spellcasters summon demonic minions to fight beside them. At first, they command only the service of imps, but as a warlock’s knowledge grows, seductive succubi, loyal voidwalkers, and horrific felhunters join the dark sorcerer’s ranks to wreak havoc on anyone who stands in their master’s way.</p>
                         <br>
@@ -23,7 +23,7 @@
             </div>
         </div>
     </header>
-    <section id="specializations" class="py-5 px-5">
+    <section id="specializations" class="py-5">
         <div class="container">
             <div class="row mb-5">
                 <div class="col">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </section>
-    <section id="general" class="py-1 px-5">
+    <section id="general" class="py-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col">
@@ -51,7 +51,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="affliction" class="warlock text-center">Affliction</h2>
             <hr>
@@ -74,7 +74,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="demonology" class="warlock text-center">Demonology</h2>
             <hr>
@@ -93,7 +93,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="destruction" class="warlock text-center">Destruction</h2>
             <hr>
@@ -110,7 +110,7 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="py-1 px-5">
+    <section id="gallery" class="py-1 d-none d-sm-block">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">

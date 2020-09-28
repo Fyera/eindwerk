@@ -55,7 +55,6 @@ class Password_reset extends Db_object
         global $database;
         $currentDate = date("U");
         $sql = "SELECT * FROM ".self::$db_table." WHERE pwdResetSelector = '{$selector}' AND pwdResetExpires >= '".$currentDate."';";
-        // $database->query($sql);
         $the_result_array = self::find_this_query($sql);
         return !empty($the_result_array) ? array_shift($the_result_array) : false;
     }

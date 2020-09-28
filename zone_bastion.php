@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
 <div class="container px-5" id="body-container">
-    <header id="header" class="mb-5 py-4">
+    <header id="header" class="mb-5 pt-5">
         <div class="primary-overlay">
             <div class="container">
                 <div class="row">
@@ -9,7 +9,12 @@
                         <h2>BASTION</h2>
                         <br>
                         <hr>
-                        <img class="img-fluid w-75" src="./img/bastion/bastion_zone.jpg" alt="bastion_zone">
+                        <div class="d-block d-md-none">
+                            <a  href="./img/bastion/bastion_zone.jpg" data-fancybox="bastion_zone_small" id="bastion_zone_small"><img class="img-fluid" src="./img/bastion/bastion_zone.jpg" alt="bastion_zone"></a>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <img class="img-fluid w-75" src="./img/bastion/bastion_zone.jpg" alt="bastion_zone">
+                        </div>
                         <br>
                     </div>
                 </div>
@@ -18,34 +23,42 @@
                         <br>
                         <p>Those who have lived a life of service are drawn to Bastion to assume the highest duty of all-carrying souls to the Shadowlands. Amongst Bastion’s gleaming spires and sweeping vistas await challenges to test the mettle of the steadfast Kyrians.</p>
                         <br>
-                        <p>Bastion is one of the five playable outdoor zones in the Shadowlands expansion, and is the primary home of the Kyrian covenant. A land of soaring angelic architecture, light, and purity, Bastion is a fitting home to the guardians of the noble dead. It is also the first of the four Covenant realms (Bastion, Maldraxxus, Ardenweald, and Revendreth) that new players will quest through to gain the privilege of choosing a covenant at level 60.</p>
+                        <p>Bastion is one of the five playable outdoor zones in the Shadowlands expansion, and is the primary home of the Kyrian covenant. A land of soaring angelic architecture, light, and purity, Bastion is a fitting home to the guardians of the noble dead. It is also the first of the four Covenant realms (Bastion, Maldraxxus, bastion, and Revendreth) that new players will quest through to gain the privilege of choosing a covenant at level 60.</p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section id="covenant" class="my-5 py-1 px-5">
+    <section id="covenant" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5">
-                <div class="col text-center">
-                    <h4>The Kyrian Covenant</h4>
+                <div class="col">
+                    <h4 class="text-center">The Kyrian Covenant</h4>
                     <hr>
+                    <div class="d-block d-md-none text-center">
+                        <a  href="./img/bastion/bastion_covenant.jpg" data-fancybox="bastion_covenant_small" id="bastion_covenant"><img class="img-fluid" src="./img/bastion/bastion_covenant.jpg" alt="bastion_covenant"></a>
+                    </div>
                     <br>
                     <p>The Kyrian Covenant is made up of souls that shed their emotions and regrets to ascended into higher beings. They take on the role of angelic guides, tasked with shuttling souls between the lands of the living and the dead. The Val'kyr are ranked among the highest echelon of the Kyrian, and while players will automatically align with the Kyrian while questing through Bastion, at max level they'll be given the option to join the Kyrian covenant and access Kyrian-specific rewards, including a class-specific ability, signature ability, and cosmetic rewards!
                     </p>
                     <br>
-                    <a href="./img/bastion/bastion_covenant.jpg" data-fancybox="bastion_covenant" id="bastion_covenant"><img class="img-fluid" src="./img/bastion/bastion_covenant.jpg" alt="bastion_covenant"></a>
+                    <div class="d-none d-md-block text-center">
+                        <img class="img-fluid" src="./img/bastion/bastion_covenant.jpg" alt="bastion_covenant">
+                    </div>
                     <br><br>
                 </div>
             </div>
         </div>
     </section>
-    <section id="characters" class="my-5 py-1 px-5">
+    <section id="characters" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5" id="uther">
                 <div class="col">
                     <h4 class="text-center">Notable Characters in Bastion</h4>
                     <hr>
+                    <div class="d-block d-md-none">
+                    <a  href="./img/bastion/characters/uther/uther_02.jpg" data-fancybox="uther_fancybox" id="uther_fancybox"><img class="img-fluid" src="./img/bastion/characters/uther/uther_02.jpg" alt="uther"></a>
+                    </div>
                     <br>
                     <p><strong>Uther the Lightbringer</strong> - Fallen hero of the Alliance and founder of the Knights of the Silver Hand Paladin order, slain by Arthas during the fall of Lordaeron (Warcraft III). Now a Forsworn Kyrian, though his motivations are unknown.</p>
                     <br>
@@ -59,7 +72,7 @@
                     <br>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5 d-none d-md-block">
                 <div class="col text-center">     
                     <div id="utherSlides" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -119,7 +132,7 @@
             </div>
         </div>
     </section>
-    <section id="map" class="my-5 py-1 px-5">
+    <section id="map" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">
@@ -134,9 +147,9 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="my-5 py-1 px-5">
+    <section id="gallery" class="mt-5 py-1">
         <div class="container">
-            <div class="row mb-5">
+            <div class="row">
                 <div class="col text-center">
                     <h4>Gallery</h4>
                     <hr>
@@ -200,7 +213,7 @@
             </div>
         </div>
     </section>
-    <section id="afterlife" class="my-5 py-1 px-5">
+    <section id="afterlife" class="pb-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">

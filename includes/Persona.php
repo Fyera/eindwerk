@@ -2,32 +2,21 @@
 class Persona extends Db_object
 {
     protected static $db_table = "persona";
-    protected static $db_table_fields = array('id', 'user_id', 'name', 'class','description', 'image');
+    protected static $db_table_fields = array('id', 'user_id', 'name', 'class','description', 'image','link');
     public $id;
     public $user_id;
     public $name;
     public $class;
     public $description;
     public $image;
+    public $link;
     public $upload_directory = 'img'.DS.'profile';
     public $image_placeholder = 'http://place-hold.it/400x400&text=image';
+    public $type;
+    public $size;
+    public $tmp_path;
 
-    public static function create_persona($user_id, $name, $class, $description, $image){
-        if(!empty($user_id) && !empty($name) && !empty($class) && !empty($description)){
-            $persona = new persona();
-            $persona->user_id = (int)$user_id;
-            $persona->name = $name;
-            $persona->class = $class;
-            $persona->description = $description;
-            $persona->image = $image;
-
-            return $persona;
-        }else{
-            return false;
-        }
-    }
-
-    public static function find_the_persona($user_id){
+    public static function find_the_personas($user_id){
         global $database;
         $sql = "SELECT * FROM ".self::$db_table;
         $sql .= " WHERE user_id=".$database->escape_string($user_id);
@@ -36,48 +25,73 @@ class Persona extends Db_object
         return self::find_this_query($sql);
     }
 
+    public function find_the_persona($id){
+        global $database;
+        $sql = "SELECT * FROM ".self::$db_table;
+        $sql .= " WHERE id=$id LIMIT 1;";
+
+        return self::find_this_query($sql);
+    }
+
+    public function edit_persona($id,$name,$class,$description,$image){
+        global $database;
+
+        $sql = "UPDATE ".static::$db_table." SET ";
+        $sql .= "name= '$name', ";
+        $sql .= "class= '$class', ";
+        $sql .= "description= '".$database->escape_string($description)."', ";
+        $sql .= "image= '$image' ";
+        $sql .= " WHERE id= $id;";
+
+        $database->query($sql);
+        return (mysqli_affected_rows($database->connection) == 1) ? true : false;
+    }
+
+    public function delete($id){
+        global $database;
+
+        $sql = "DELETE FROM ".static::$db_table;
+        $sql .= " WHERE id = $id LIMIT 1;";
+
+        $database->query($sql);
+        return (mysqli_affected_rows($database->connection) == 1) ? true : false;
+    }
+
+    public function create($user_id,$name,$class,$description,$image,$link){
+        global $database;
+        
+        $sql = "INSERT INTO ".static::$db_table."(user_id,name,class,description,image,link) VALUES (";
+        $sql .= "'$user_id', ";
+        $sql .= "'$name', ";
+        $sql .= "'$class', ";
+        $sql .= "'".$database->escape_string($description)."', ";
+        $sql .= "'$image', ";
+        $sql .= "'$link');";
+
+        $database->query($sql);
+        return (mysqli_affected_rows($database->connection) == 1) ? true : false;
+    }
+
+    public function upload($user_id,$image,$imageTmpName){
+        $upload_directory = 'img'.DS.'profile';
+        $target_path = SITE_ROOT.DS.$upload_directory.DS.$user_id.DS.$image;
+        if(move_uploaded_file($imageTmpName,$target_path)){
+            return true;
+        };
+    }
+
     public function image_path_and_placeholder(){
         return empty($this->image) ? $this->image_placeholder : $this->upload_directory.DS.$this->user_id.DS.$this->image;
     }
 
-    public function set_file($file){
-        if(empty($file) || !$file || !is_array($file)){
-            $this->errors[] = "No file uploaded!";
-            return false;
-        }elseif($file['error'] != 0){
-            $this->errors[] = $this->upload_errors_array[$file['error']];
-            return false;
-        }else{
-            $this->persona_image = basename($file['name']);
-            $this->tmp_path = $file['tmp_name'];
-            $this->type = $file['type'];
-            $this->size = $file['size'];
+    function generateRandomString($length = 10) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
         }
-    }
-
-    public function save_persona_and_image(){
-        $target_path = SITE_ROOT.DS.$this->upload_directory.DS.$this->user_id.DS.$this->image;
-
-        if(!empty($this->errors)){
-            return false;
-        }
-        if(empty($this->persona_image)||empty($this->tmp_path)){
-            $this->errors[] = "File not available";
-            return false;
-        }
-        if(file_exists($target_path)){
-            $this->errors[] = "File {$this->persona_image} exists";
-            var_dump();
-        }
-        if(move_uploaded_file($this->tmp_path, $target_path)){
-            if($this->create()){
-                unset($this->tmp_path);
-                return true;
-            }else{
-                $this->errors[] = "This folder has no write permissions";
-                return false;
-            }
-        }
+        return $randomString;
     }
 }
 ?>

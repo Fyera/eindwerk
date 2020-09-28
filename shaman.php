@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
 <div class="container px-5" id="body-container">
-    <header id="header" class="py-4 px-5">
+    <header id="header" class="py-4">
         <div class="primary-overlay">
             <div class="container">
                 <div class="row">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="row pt-3">
-                    <div class="col text-center">
+                    <div class="col text-center mx-5">
                         <br>
                         <p>Shamans are spiritual guides and practitioners, not of the divine, but of the very elements. Unlike some other mystics, shamans commune with forces that are not strictly benevolent. The elements are chaotic, and left to their own devices, they rage against one another in unending primal fury. It is the call of the shaman to bring balance to this chaos. Acting as moderators among earth, fire, water, and air, shamans summon totems that focus the elements to support the shaman’s allies or punish those who threaten them.</p>
                         <br>
@@ -24,7 +24,7 @@
             </div>
         </div>
     </header>
-    <section id="specializations" class="py-5 px-5">
+    <section id="specializations" class="py-5">
         <div class="container">
             <div class="row mb-5">
                 <div class="col">
@@ -38,7 +38,7 @@
             </div>
         </div>
     </section>
-    <section id="general" class="py-1 px-5">
+    <section id="general" class="py-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col">
@@ -50,7 +50,7 @@
             </div>
         </div>
     </section>
-    <sectionclass="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="restoration" class="shaman text-center">Restoration</h2>
             <hr>
@@ -71,7 +71,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="enhancement" class="shaman text-center">Enhancement</h2>
             <hr>
@@ -102,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="elemental" class="shaman text-center">Elemental</h2>
             <hr>
@@ -121,7 +121,7 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="py-1 px-5">
+    <section id="gallery" class="py-1 d-none d-sm-block">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">

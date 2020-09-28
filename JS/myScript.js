@@ -12,22 +12,9 @@ $(document).ready(function () {
 });
 
 //Prevent closing from click inside dropdown
-// $(document).on("click", ".dropdown-menu", function (e) {
-//   e.stopPropagation();
-// });
-
-// Make it as accordion for smaller screens
-if ($(window).width() < 992) {
-  $(".dropdown-menu a").click(function (e) {
-    e.preventDefault();
-    if ($(this).next(".submenu").length) {
-      $(this).next(".submenu").toggle();
-    }
-    $(".dropdown").on("hide.bs.dropdown", function () {
-      $(this).find(".submenu").hide();
-    });
-  });
-}
+$(document).on("click", ".dropdown-menu", function (e) {
+  e.stopPropagation();
+});
 
 // Fancybox init
 $("a.grouped_elements").fancybox();
@@ -53,6 +40,9 @@ $(document).ready(function () {
 
 //Smooth scrolling and fadeOut
 $(document).ready(function () {
+  if ($(this).scrollTop() < 100) {
+    $(".back-to-top").hide();
+  }
   /*--Scroll Back to Top Button Show--*/
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -64,7 +54,15 @@ $(document).ready(function () {
 
   //Click event scroll to top button jquery
   $(".back-to-top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 600);
+    $("html, body").animate({ scrollTop: 0 }, 800);
     return false;
   });
 });
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}

@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
 <div class="container px-5" id="body-container">
-    <header id="header" class="mb-5 py-4">
+    <header id="header" class="mb-5 pt-5">
         <div class="primary-overlay">
             <div class="container">
                 <div class="row">
@@ -9,7 +9,12 @@
                         <h2>THE MAW</h2>
                         <br>
                         <hr>
-                        <img class="img-fluid w-75" src="./img/maw/maw_zone.jpg" alt="maw_zone">
+                        <div class="d-block d-md-none">
+                            <a  href="./img/maw/maw_zone.jpg" data-fancybox="maw_zone_small" id="maw_zone_small"><img class="img-fluid" src="./img/maw/maw_zone.jpg" alt="maw_zone"></a>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <img class="img-fluid w-75" src="./img/maw/maw_zone.jpg" alt="maw_zone">
+                        </div>
                         <br>
                     </div>
                 </div>
@@ -25,7 +30,7 @@
             </div>
         </div>
     </header>
-    <section id="area" class="my-5 py-5 px-5">
+    <section id="area" class="my-5">
         <div class="container">
             <div class="row mb-5" id="torghast">
                 <div class="col text-center">
@@ -99,7 +104,7 @@
             </div>
         </div>
     </section>
-    <section id="map" class="my-5 py-1 px-5">
+    <section id="map" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">
@@ -112,7 +117,7 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="my-5 py-1 px-5">
+    <section id="gallery" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">

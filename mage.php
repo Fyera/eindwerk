@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
 <div class="container px-5" id="body-container">
-    <header id="header" class="py-4 px-5">
+    <header id="header" class="py-4">
         <div class="primary-overlay">
             <div class="container">
                 <div class="row">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="row pt-3">
-                    <div class="col text-center">
+                    <div class="col text-center mx-5">
                         <br>
                         <p>Students gifted with a keen intellect and unwavering discipline may walk the path of the Mage. The arcane magic available to magi is both great and dangerous, and thus is revealed only to the most devoted practitioners. To avoid interference with their spellcasting, magi wear only cloth armor, but arcane shields and enchantments give them additional protection. To keep enemies at bay, magi can summon bursts of fire to incinerate distant targets and cause entire areas to erupt, setting groups of foes ablaze.</p>
                         <br>
@@ -24,7 +24,7 @@
             </div>
         </div>
     </header>
-    <section id="specializations" class="py-5 px-5">
+    <section id="specializations" class="py-5">
         <div class="container">
             <div class="row mb-5">
                 <div class="col">
@@ -38,7 +38,7 @@
             </div>
         </div>
     </section>
-    <section id="general" class="py-1 px-5">
+    <section id="general" class="py-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col">
@@ -54,7 +54,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="arcane" class="mage text-center">Arcane</h2>
             <hr>
@@ -79,7 +79,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="fire" class="mage text-center">Fire</h2>
             <hr>
@@ -102,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="frost" class="mage text-center">Frost</h2>
             <hr>
@@ -121,7 +121,7 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="py-1 px-5">
+    <section id="gallery" class="py-1 d-none d-sm-block">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">

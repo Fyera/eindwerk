@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
 <div class="container px-5" id="body-container">
-    <header id="header" class="py-4 px-5">
+    <header id="header" class="py-4">
         <div class="primary-overlay">
             <div class="container">
                 <div class="row">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="row pt-3">
-                    <div class="col text-center">
+                    <div class="col text-center mx-5">
                         <br>
                         <p>Priests are devoted to the spiritual, and express their unwavering faith by serving the people. For millennia they have left behind the confines of their temples and the comfort of their shrines so they can support their allies in war-torn lands. In the midst of terrible conflict, no hero questions the value of the priestly orders.</p>
                         <br>
@@ -24,7 +24,7 @@
             </div>
         </div>
     </header>
-    <section id="specializations" class="py-5 px-5">
+    <section id="specializations" class="py-5">
         <div class="container">
             <div class="row mb-5">
                 <div class="col">
@@ -38,7 +38,7 @@
             </div>
         </div>
     </section>
-    <section id="general" class="py-1 px-5">
+    <section id="general" class="py-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col">
@@ -50,7 +50,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="discipline" class="priest text-center">Discipline</h2>
             <hr>
@@ -73,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="holy" class="priest text-center">Holy</h2>
             <hr>
@@ -92,7 +92,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="shadow" class="priest text-center">shadow</h2>
             <hr>
@@ -111,7 +111,7 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="py-1 px-5">
+    <section id="gallery" class="py-1 d-none d-sm-block">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">

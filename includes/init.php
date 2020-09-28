@@ -9,6 +9,7 @@ require_once(INCLUDES_PATH.DS."config.php");
 require_once(INCLUDES_PATH.DS."Database.php");
 require_once(INCLUDES_PATH.DS."Db_object.php");
 require_once(INCLUDES_PATH.DS."User.php");
+require_once(INCLUDES_PATH.DS."Persona.php");
 require_once(INCLUDES_PATH.DS."Password_reset.php");
 require_once(INCLUDES_PATH.DS."Session.php");
 ?>

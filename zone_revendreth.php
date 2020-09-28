@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
 <div class="container px-5" id="body-container">
-    <header id="header" class="mb-5 py-4">
+    <header id="header" class="mb-5 pt-5">
         <div class="primary-overlay">
             <div class="container">
                 <div class="row">
@@ -9,7 +9,12 @@
                         <h2>REVENDRETH</h2>
                         <br>
                         <hr>
-                        <img class="img-fluid w-75" src="./img/revendreth/revendreth_zone.jpg" alt="revendreth_zone">
+                        <div class="d-block d-md-none">
+                            <a  href="./img/revendreth/revendreth_zone.jpg" data-fancybox="revendreth_zone_small" id="revendreth_zone_small"><img class="img-fluid" src="./img/revendreth/revendreth_zone.jpg" alt="revendreth_zone"></a>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <img class="img-fluid w-75" src="./img/revendreth/revendreth_zone.jpg" alt="revendreth_zone">
+                        </div>
                         <br>
                     </div>
                 </div>
@@ -24,27 +29,35 @@
             </div>
         </div>
     </header>
-    <section id="covenant" class="my-5 py-1 px-5">
+    <section id="covenant" class="my-5 py-1">
         <div class="container">
-            <h4 class="text-center">The Venthyr Covenant</h4>
-            <hr>
             <div class="row mb-5">
-                <div class="col text-center">
+                <div class="col">
+                    <h4 class="text-center">The Venthyr Covenant</h4>
+                    <hr>
+                    <div class="d-block d-md-none text-center">
+                        <a  href="./img/revendreth/revendreth_covenant.jpg" data-fancybox="revendreth_covenant_small" id="revendreth_covenant"><img class="img-fluid" src="./img/revendreth/revendreth_covenant.jpg" alt="revendreth_covenant"></a>
+                    </div>
                     <br>
                     <p>The Venthyr Covenant punishes those condemned to Revendreth for their sins in life, allowing them to atone for their crimes, rather than spend an eternity in the Maw. While first playing through the zone, players will automatically join them while questing, though at max level they'll be given the option to choose a specific covenant, granting access to covenant specific rewards, a class-specific ability, signature ability, and cosmetic rewards!</p>
                     <br>
-                    <a href="./img/revendreth/revendreth_covenant.jpg" data-fancybox="revendreth_covenant" id="revendreth_covenant"><img class="img-fluid" src="./img/revendreth/revendreth_covenant.jpg" alt="revendreth_covenant"></a>
+                    <div class="d-none d-md-block text-center">
+                        <img class="img-fluid" src="./img/revendreth/revendreth_covenant.jpg" alt="revendreth_covenant">
+                    </div>
                     <br><br>
                 </div>
             </div>
         </div>
     </section>
-    <section id="characters" class="my-5 py-1 px-5">
+    <section id="characters" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5"  id="kaelthas">
                 <div class="col">
                     <h4 class="text-center">Notable Characters in revendreth</h4>
                     <hr>
+                    <div class="d-block d-md-none">
+                    <a  href="./img/revendreth/characters/kaelthas/kaelthas_01.jpg" data-fancybox="kaelthas_fancybox" id="kaelthas_fancybox"><img class="img-fluid" src="./img/revendreth/characters/kaelthas/kaelthas_01.jpg" alt="kaelthas"></a>
+                    </div>
                     <br>
                     <p><strong>Kael'thas Sunstrider</strong> -  was the Prince of Quel'Thalas, the last of the House of Sunstrider, as well as a senior member of the Kirin Tor. After the fall of Quel'Thalas, Kael'thas led what remained of his people, the sin'dorei, in the service of the Alliance. Striving to placate his people's addiction to magic, he later covertly allied with Illidan Stormrage, but betrayed him to the Burning Legion when its master, the demon lord Kil'jaeden, enticed Kael'thas with the promise of salvation for the blood elves.</p>
                     <br>
@@ -53,7 +66,7 @@
                     <p>Now condemned to Revendreth to suffer for the crimes he committed in life, Kael'thas seeks vengeance, but suffers at the hands of Sire Denathrius.</p>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5 d-none d-md-block">
                 <div class="col text-center">     
                     <div id="kaelthasSlides" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -114,7 +127,7 @@
             </div>
         </div>
     </section>
-    <section id="map" class="my-5 py-1 px-5">
+    <section id="map" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">
@@ -127,9 +140,9 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="my-5 py-1 px-5">
+    <section id="gallery" class="mt-5 py-1">
         <div class="container">
-            <div class="row mb-5">
+            <div class="row">
                 <div class="col text-center">
                     <h4>Gallery</h4>
                     <hr>
@@ -193,7 +206,7 @@
             </div>
         </div>
     </section>
-    <section id="afterlife" class="my-5 py-1 px-5">
+    <section id="afterlife" class="pb-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">

@@ -89,39 +89,39 @@
       <br>
       <br>
       <div class="col mb-6">
-        <h5 class="dk">Death Knights:</h5>
+        <a href="death_knight.php"><h5 class="dk">Death Knights:</h5></a>
         <p><strong>Raise Dead</strong> is once again available to all specializations.<br><strong>Summon Gargoyle</strong> is now baseline for all specializations instead of a talent.<br><strong>Anti-Magic Zone</strong> is now baseline for all specializations instead of a PvP.</p>
         <br>
-        <h5 class="dh">Demon Hunters:</h5>
+        <a href="demon_hunter.php"><h5 class="dh">Demon Hunters:</h5></a>
         <p><strong>Immolation Aura</strong> will be available for both specializations.</p>
         <br>
-        <h5 class="druid">Druids:</h5>
+        <a href="druid.php"><h5 class="druid">Druids:</h5></a>
         <p><strong>Ursol’s Vortex</strong> is now baseline for all specializations instead of a talent.<br><strong>Cyclone</strong> is now baseline for all specializations instead of a PvP talent.</p>
         <br>
-        <h5 class="hunter">Hunters:</h5>
+        <a href="hunter.php"><h5 class="hunter">Hunters:</h5></a>
         <p><strong>Kill Shot</strong> and <strong>Eyes of the Beast</strong> are once again available to Hunters.<br><strong>Hunter’s Mark</strong> is now baseline for all specializations instead of a talent.</p>
         <br>
-        <h5 class="mage">Mages:</h5>
+        <a href="mage.php"><h5 class="mage">Mages:</h5></a>
         <p><strong>Frostbolt</strong>, <strong>Fire Blast</strong> and <strong>Arcane Explosion</strong> are once again available to all specializations.</p>
         <br>
-        <h5 class="paladin">Paladins:</h5>
+        <a href="paladin.php"><h5 class="paladin">Paladins:</h5></a>
         <p>Auras are returning: <strong>Devotion Aura</strong>, <strong>Retribution Aura</strong>, <strong>Crusader Aura</strong> and <strong>Concentration Aura</strong>.<br><strong>Consecration</strong> is now baseline for all specializations.<br><strong>Hammer of Wrath</strong> is now baseline for all specializations instead of a talent.</p>
         <br>
       </div>
       <div class="col mb-6">
-        <h5 class="priest">Priests:</h5>
+        <a href="priest.php"><h5 class="priest">Priests:</h5></a>
         <p><strong>Mind Blast</strong>, <strong>Flash Heal</strong> and <strong>Shadow Word: Death</strong> are once again available to all specializations.</p>
         <br>
-        <h5 class="rogue">Rogues:</h5>
+        <a href="rogue.php"><h5 class="rogue">Rogues:</h5></a>
         <p>Poisons are returning for all specializations: <strong>Instant Poison</strong>, <strong>Deadly Poison</strong>, <strong>Crippling Poison</strong> and <strong>Mind-numbing Poison</strong>.<br><strong>Shiv</strong> is once again baseline for all specializations instead of a PvP talent.</p>
         <br>
-        <h5 class="shaman">Shaman:</h5>
+        <a href="shaman.php"><h5 class="shaman">Shaman:</h5></a>
         <p>Totems are returning for all specializations: <strong>Healing Stream Totem</strong>, <strong>Searing Totem</strong>, <strong>Tremor Totem</strong> and <strong>Capacitor Totem</strong>.<br><strong>Primal Strike</strong> and <strong>Frost Shock</strong> are once again available to all specializations.</p>
         <br>
-        <h5 class="warlock">Warlocks:</h5>
+        <a href="warlock.php"><h5 class="warlock">Warlocks:</h5></a>
         <p>Curses are returning: <strong>Curse of Doom</strong>, <strong>Curse of Tongues</strong>, <strong>Curse of Recklessness</strong> and <strong>Curse of Weakness</strong>.<br><strong>Ritual of Doom</strong> is once again available to all specializations.<br><strong>Demonic Circle</strong> is once again baseline for all specializations instead of a talent.</p>
         <br>
-        <h5 class="warrior">Warriors:</h5>
+        <a href="warrior.php"><h5 class="warrior">Warriors:</h5></a>
         <p><strong>Shattering Throw</strong>, <strong>Challenging Shout</strong> and <strong>Shield Block</strong> are once again available to all specializations.</p>
       </div>
     </div>

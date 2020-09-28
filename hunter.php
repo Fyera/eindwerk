@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
 <div class="container px-5" id="body-container">
-    <header id="header" class="py-4 px-5">
+    <header id="header" class="py-4">
         <div class="primary-overlay">
             <div class="container">
                 <div class="row">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="row pt-3">
-                    <div class="col text-center">
+                    <div class="col text-center mx-5">
                         <br>
                         <p>From an early age, the call of the wild draws some adventurers from the comfort of their homes into the unforgiving primal world outside. Those who endure become Hunters. Masters of their environment, they are able to slip like ghosts through the trees and lay traps in the paths of their enemies.</p>
                         <br>
@@ -24,7 +24,7 @@
             </div>
         </div>
     </header>
-    <section id="specializations" class="py-5 px-5">
+    <section id="specializations" class="py-5">
         <div class="container">
             <div class="row mb-5">
                 <div class="col">
@@ -38,7 +38,7 @@
             </div>
         </div>
     </section>
-    <section id="general" class="py-1 px-5">
+    <section id="general" class="py-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col">
@@ -52,7 +52,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="beastmastery" class="hunter text-center">Beast Master</h2>
             <hr>
@@ -75,7 +75,7 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
             <h2 id="marksmanship" class="hunter text-center">Marksmanship</h2>
             <hr>
@@ -96,9 +96,9 @@
             </div>
         </div>
     </section>
-    <section class="py-1 px-5">
+    <section class="py-1">
         <div class="container">
-            <h2 id="survival" class="hunter text-center">survival</h2>
+            <h2 id="survival" class="hunter text-center">Survival</h2>
             <hr>
             <br>
             <div class="row mb-5">
@@ -113,7 +113,7 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="py-1 px-5">
+    <section id="gallery" class="py-1 d-none d-sm-block">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">

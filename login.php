@@ -28,7 +28,6 @@
     $password = "";
   }
 ?>
-
 <div class="container px-5">
     <!-- Outer Row -->
     <div class="row justify-content-center">

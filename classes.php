@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
 <div class="container px-5" id="body-container">
-    <section class="my-5 py-5 px-5">
+    <section class="mb-5 py-5">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">

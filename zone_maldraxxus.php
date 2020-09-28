@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
 <div class="container px-5" id="body-container">
-    <header id="header" class="mb-5 py-4">
+    <header id="header" class="mb-5 pt-5">
         <div class="primary-overlay">
             <div class="container">
                 <div class="row">
@@ -9,7 +9,12 @@
                         <h2>MALDRAXXUS</h2>
                         <br>
                         <hr>
-                        <img class="img-fluid w-75" src="./img/maldraxxus/maldraxxus_zone.jpg" alt="maldraxxus_zone">
+                        <div class="d-block d-md-none">
+                            <a  href="./img/maldraxxus/maldraxxus_zone.jpg" data-fancybox="maldraxxus_zone_small" id="maldraxxus_zone_small"><img class="img-fluid" src="./img/maldraxxus/maldraxxus_zone.jpg" alt="maldraxxus_zone"></a>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <img class="img-fluid w-75" src="./img/maldraxxus/maldraxxus_zone.jpg" alt="maldraxxus_zone">
+                        </div> 
                         <br>
                     </div>
                 </div>
@@ -24,33 +29,41 @@
             </div>
         </div>
     </header>
-    <section id="covenant" class="my-5 py-1 px-5">
+    <section id="covenant" class="my-5 py-1">
         <div class="container">
             <h4 class="text-center">The Necrolord Covenant</h4>
             <hr>
+            <div class="d-block d-md-none text-center">
+                        <a  href="./img/maldraxxus/maldraxxus_covenant.jpg" data-fancybox="maldraxxus_covenant_small" id="maldraxxus_covenant"><img class="img-fluid" src="./img/maldraxxus/maldraxxus_covenant.jpg" alt="maldraxxus_covenant"></a>
+                    </div>
             <div class="row mb-5">
                 <div class="col text-center">
                     <br>
                     <p>The Necrolord Covenant is the embodiment of the forces of death. While other realms of the afterlife revolve around atonement, ascendance, and rebirth, the undead legions of the Necrolords embrace war and make up the military arm of the Shadowlands. Although the undead abominations and warlike nature would might make it seem so, not all souls that make their way there are evil; it calls to any who revel in the thrill of battle and challenge of conflict. While first playing through the zone, players will automatically join the Necrolord covenant while questing, though at max level they'll be given the option to choose a specific covenant, granting access to covenant specific rewards, a class-specific ability, signature ability, and cosmetic rewards!</p>
                     <br>
-                    <a href="./img/maldraxxus/maldraxxus_covenant.jpg" data-fancybox="maldraxxus_covenant" id="maldraxxus_covenant"><img class="img-fluid" src="./img/maldraxxus/maldraxxus_covenant.jpg" alt="maldraxxus_covenant"></a>
+                    <div class="d-none d-md-block text-center">
+                        <img class="img-fluid" src="./img/maldraxxus/maldraxxus_covenant.jpg" alt="maldraxxus_covenant">
+                    </div>
                     <br><br>
                 </div>
             </div>
         </div>
     </section>
-    <section id="characters" class="my-5 py-1 px-5">
+    <section id="characters" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5"  id="draka">
                 <div class="col">
                     <h4 class="text-center">Notable Characters in maldraxxus</h4>
                     <hr>
+                    <div class="d-block d-md-none">
+                    <a  href="./img/maldraxxus/characters/draka/thumb/draka_03.jpg" data-fancybox="draka_fancybox" id="draka_fancybox"><img class="img-fluid" src="./img/maldraxxus/characters/draka/thumb/draka_03.jpg" alt="draka"></a>
+                    </div>
                     <br>
                     <p><strong>Draka</strong> - Mother to Thrall and wife to Durotan, the warrior matriarch of the Frostwolf clan fell protecting her son, setting him on the path to his destiny. In the afterlife, she has found her calling as Baroness of the House of the Chosen, embroiled in a bitter war to decide the fate of Maldraxxus.</p>
                     <br>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5 d-none d-md-block">
                 <div class="col text-center">     
                     <div id="drakaSlides" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -111,12 +124,15 @@
             </div>
             <div class="row mb-5" id="alex">
                 <div class="col">
+                    <div class="d-block d-md-none">
+                        <a  href="./img/maldraxxus/characters/alexandros/thumb/alex_02.jpg" data-fancybox="alexandros_fancybox" id="alexandros_fancybox"><img class="img-fluid" src="./img/maldraxxus/characters/alexandros/thumb/alex_02.jpg" alt="alexandros"></a>
+                    </div>
                     <br>
                     <p><strong>Alexandros Mograine</strong> - The Ashbringer led a life of war, fighting against the undead legions of the Scourge before being betrayed by his jealous son. In death, he rose to become a Baron of the House of the Chosen, though once again faced betrayal at the hands of another Baron, trapping the once mighty Paladin within the Maw.</p>
                     <br>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5 d-none d-md-block">
                 <div class="col text-center">     
                     <div id="alexSlides" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -177,6 +193,9 @@
             </div>
             <div class="row mb-5" id="kelthuzad">
                 <div class="col">
+                    <div class="d-block d-md-none">
+                        <a  href="./img/maldraxxus/characters/kelthuzad/thumb/kelthuzad_03.jpg" data-fancybox="kelthuzad_fancybox" id="kelthuzad_fancybox"><img class="img-fluid" src="./img/maldraxxus/characters/kelthuzad/thumb/kelthuzad_03.jpg" alt="kelthuzad"></a>
+                    </div>
                     <br>
                     <p><strong>Kel'Thuzad</strong> - was a powerful human mage, and a member of the Kirin Tor until his interest in the dark arts caused him to be expelled. He went on to become the founder of the Cult of the Damned and one of the principal agents of the Lich King responsible for spreading the plague across Lordaeron.</p>
                     
@@ -186,7 +205,7 @@
                     <br>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5 d-none d-md-block">
                 <div class="col text-center">     
                     <div id="kelSlides" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -247,6 +266,9 @@
             </div>
             <div class="row mb-5" id="vashj">
                 <div class="col">
+                    <div class="d-block d-md-none">
+                        <a  href="./img/maldraxxus/characters/vashj/thumb/vashj_02.jpg" data-fancybox="vashj_fancybox" id="vashj_fancybox"><img class="img-fluid" src="./img/maldraxxus/characters/vashj/thumb/vashj_02.jpg" alt="vashj"></a>
+                    </div>
                     <br>
                     <p><strong>Lady Vashj</strong> - was once a handmaiden of Queen Azshara herself, being transformed into one of the Naga after Azshara's pact with N'Zoth. Ten thousand years later, Vashj followed the call of Illidan Stormrage and went with him and Kael'thas Sunstrider in Outland. Later on she was defeated in the Serpentshrine Cavern when heroes raided it.</p>
                     
@@ -254,7 +276,7 @@
                     <br>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5 d-none d-md-block">
                 <div class="col text-center">     
                     <div id="vashjSlides" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -315,7 +337,7 @@
             </div>
         </div>
     </section>
-    <section id="map" class="my-5 py-1 px-5">
+    <section id="map" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">
@@ -328,9 +350,9 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="my-5 py-1 px-5">
+    <section id="gallery" class="mt-5 py-1">
         <div class="container">
-            <div class="row mb-5">
+            <div class="row">
                 <div class="col text-center">
                     <h4>Gallery</h4>
                     <hr>
@@ -394,7 +416,7 @@
             </div>
         </div>
     </section>
-    <section id="afterlife" class="my-5 py-1 px-5">
+    <section id="afterlife" class="pb-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">

@@ -45,7 +45,7 @@
           <li class="nav-item">
             <a href="index.php" class="nav-link">Home</a>
           </li>
-          <li class="nav-item dropdown d-none d-md-block">
+          <li class="nav-item dropdown d-none d-lg-block">
             <a href="zones.php" class="nav-link dropdown-toggle">Zones</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="zone_bastion.php">Bastion</a></li>
@@ -55,7 +55,7 @@
               <li><a class="dropdown-item" href="zone_maw.php">The Maw</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown d-block d-sm-block d-md-none">
+          <li class="nav-item dropdown d-block d-lg-none">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Zones</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="zone_bastion.php">Bastion</a></li>
@@ -65,7 +65,7 @@
               <li><a class="dropdown-item" href="zone_maw.php">The Maw</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown d-none d-md-block">
+          <li class="nav-item dropdown d-none d-lg-block">
             <a href="classes.php" class="nav-link dropdown-toggle">Classes</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="death_knight.php">Death Knight</a></li>
@@ -82,7 +82,7 @@
               <li><a class="dropdown-item" href="warrior.php">warrior</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown d-block d-sm-block d-md-none">
+          <li class="nav-item dropdown d-block d-lg-none">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Classes</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="death_knight.php">Death Knight</a></li>

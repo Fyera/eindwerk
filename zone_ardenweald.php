@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
 <div class="container px-5" id="body-container">
-    <header id="header" class="mb-5 py-4">
+    <header id="header" class="mb-5 pt-5">
         <div class="primary-overlay">
             <div class="container">
                 <div class="row">
@@ -9,7 +9,12 @@
                         <h2>ARDENWEALD</h2>
                         <br>
                         <hr>
-                        <img class="img-fluid w-75" src="./img/ardenweald/ardenweald_zone.jpg" alt="ardenweald_zone">
+                        <div class="d-block d-md-none">
+                            <a  href="./img/ardenweald/ardenweald_zone.jpg" data-fancybox="ardenweald_zone_small" id="ardenweald_zone_small"><img class="img-fluid" src="./img/ardenweald/ardenweald_zone.jpg" alt="ardenweald_zone"></a>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <img class="img-fluid w-75" src="./img/ardenweald/ardenweald_zone.jpg" alt="ardenweald_zone">
+                        </div>   
                         <br>
                     </div>
                 </div>
@@ -26,28 +31,36 @@
             </div>
         </div>
     </header>
-    <section id="covenant" class="my-5 py-1 px-5">
+    <section id="covenant" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5">
-                <div class="col text-center">
-                    <h4>The Night Fae Covenant</h4>
+                <div class="col">
+                    <h4 class="text-center">The Night Fae Covenant</h4>
                     <hr>
+                    <div class="d-block d-md-none text-center">
+                        <a  href="./img/ardenweald/ardenweald_covenant.jpg" data-fancybox="ardenweald_covenant_small" id="ardenweald_covenant"><img class="img-fluid" src="./img/ardenweald/ardenweald_covenant.jpg" alt="ardenweald_covenant"></a>
+                    </div>
                     <br>
                     <p>The Night Fae Covenant is closely tied to the forces of nature, particularly the cycle of rebirth. It was through their aid that the demigod Cenarius was able to return to Azeroth, though not all practitioners of Druidic or other natural magic will necessarily make their way to Ardenweald in the afterlife. While first playing through the zone, players will automatically join them while questing, though at max level they'll be given the option to choose a specific covenant, granting access to covenant specific rewards, a class-specific ability, signature ability, and cosmetic rewards!
                     </p>
                     <br>
-                    <a href="./img/ardenweald/ardenweald_covenant.jpg" data-fancybox="ardenweald_covenant" id="ardenweald_covenant"><img class="img-fluid" src="./img/ardenweald/ardenweald_covenant.jpg" alt="ardenweald_covenant"></a>
+                    <div class="d-none d-md-block text-center">
+                        <img class="img-fluid" src="./img/ardenweald/ardenweald_covenant.jpg" alt="ardenweald_covenant">
+                    </div>
                     <br><br>
                 </div>
             </div>
         </div>
     </section>
-    <section id="characters" class="my-5 py-1 px-5">
+    <section id="characters" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5" id="ysera">
                 <div class="col">
                     <h4 class="text-center">Notable Characters in Ardenweald</h4>
                     <hr>
+                    <div class="d-block d-md-none">
+                    <a  href="./img/ardenweald/characters/ysera/thumb/ysera_02.jpg" data-fancybox="ysera_fancybox" id="ysera_fancybox"><img class="img-fluid" src="./img/ardenweald/characters/ysera/thumb/ysera_02.jpg" alt="ysera"></a>
+                    </div>
                     <br>
                     <p><strong>Ysera</strong> - Corrupted by Xavius and killed by her former allies, Ysera was one of the last souls taken to their proper place within the Shadowlands, rather than being confined to the Maw. The green dragon aspect's story continues in Shadowlands, as her restless spirit continually relives her final moments.</p>
                     <br>
@@ -58,7 +71,7 @@
                     <br>
                 </div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5 d-none d-md-block">
                 <div class="col text-center">     
                     <div id="yseraSlides" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -120,7 +133,7 @@
             </div>
         </div>
     </section>
-    <section id="map" class="my-5 py-1 px-5">
+    <section id="map" class="my-5 py-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">
@@ -133,9 +146,9 @@
             </div>
         </div>
     </section>
-    <section id="gallery" class="my-5 py-1 px-5">
+    <section id="gallery" class="mt-5 py-1">
         <div class="container">
-            <div class="row mb-5">
+            <div class="row">
                 <div class="col text-center">
                     <h4>Gallery</h4>
                     <hr>
@@ -199,7 +212,7 @@
             </div>
         </div>
     </section>
-    <section id="afterlife" class="my-5 py-1 px-5">
+    <section id="afterlife" class="pb-1">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">

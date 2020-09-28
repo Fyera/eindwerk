@@ -27,7 +27,7 @@ if(empty($selector) || empty($validator)){
                     $tokenBin = hex2bin($validator);
                     $row = get_object_vars($pwdReset);
                     $tokenCheck = password_verify($tokenBin,$row["pwdResetToken"]);
-                    var_dump($tokenCheck);
+                    // var_dump($tokenCheck);
 
                     if($tokenCheck == false){
                         header("Location: forgot-password.php?reset=timeout");

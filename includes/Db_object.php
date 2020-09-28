@@ -38,8 +38,4 @@ class Db_object
         }
         return $the_object_array;
     }
-
-    public static function find_all(){
-        return static::find_this_query("SELECT * FROM ".static::$db_table.";");
-    }
 }

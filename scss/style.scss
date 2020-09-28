@@ -30,6 +30,11 @@ body {
   max-width: 1600px !important;
 }
 
+section {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .center {
   margin: auto;
   width: 50%;
@@ -39,9 +44,11 @@ body {
 #body-container {
   background: rgb(21, 23, 26);
   background: rgba($color: #15171a, $alpha: 0.9);
+
   hr {
     background-color: #f8f9fa;
   }
+  label,
   a,
   li,
   p,
@@ -49,7 +56,7 @@ body {
   h2,
   h4,
   h3 {
-    color: #f8f9fa;
+    color: #f8f9fa !important;
   }
   .dk {
     color: #e35454 !important;
@@ -120,8 +127,8 @@ body {
 }
 
 .card-body {
-  max-height: 500px;
-  overflow: hidden;
+  // max-height: 500px;
+  // overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -224,9 +231,24 @@ body {
   }
 }
 
-a:hover {
-  color: #64342a !important;
+.modal-content {
+  background-color: #191919 !important;
+  color: #ffffff !important;
+
+  .btn:hover {
+    border-color: #5ce1e6;
+    background-color: #5ce1e6 !important;
+    color: #2a2a63 !important;
+  }
+  .btn {
+    border-color: #191919;
+    color: #ffffff;
+  }
+  .close {
+    color: #ffffff;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .dropdown:hover .dropdown-menu,
   .btn-group:hover .dropdown-menu {
@@ -241,5 +263,33 @@ a:hover {
   .navbar .dropdown-toggle,
   .nav-tabs .dropdown-toggle {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 978px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    padding: 0;
+  }
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .back-to-top {
+    width: 30px;
+    height: 30px;
+    i {
+      font-size: 30px;
+    }
   }
 }
