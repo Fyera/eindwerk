@@ -13,7 +13,7 @@ class Password_reset extends Db_object
         global $database;
         $selector = bin2hex(random_bytes(8));
         $token = random_bytes(32);
-        $url = "localhost/php/eindwerk/reset-password.php?selector=".$selector."&validator=".bin2hex($token);
+        $url = "http://www.mvlwebdevelopment.be/reset-password.php?selector=".$selector."&validator=".bin2hex($token);
         $expires = date("U") + 1800;
 
         $sql = "DELETE FROM ".self::$db_table." WHERE pwdResetEmail= '{$userEmail}';";

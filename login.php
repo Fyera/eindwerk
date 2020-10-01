@@ -1,11 +1,11 @@
 <?php include("includes/header.php");
-  require_once('includes/database.php');
   $currentDate = date("U");
   $error_message = "";
+  $user_found="";
+
   if($session->is_signed_in()){
     redirect("index.php");
   }
-
   if(isset($_POST['submit'])){
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
@@ -27,7 +27,7 @@
     $username = "";
     $password = "";
   }
-?>
+  ?>
 <div class="container px-5">
     <!-- Outer Row -->
     <div class="row justify-content-center">

@@ -1,4 +1,4 @@
-<?php include("includes/header.php") ?>
+<?php include("includes/header.php"); ?>
 <!-- Begin Body -->
 <div class="container px-5" id="body-container">
 <header id="header" class="mb-5 pt-5 pb-1">
@@ -57,7 +57,7 @@
     </div>
     <hr>
     <div class="row">
-      <div class="d-none d-sm-block d-md-none col-md-4">
+      <div class="d-sm-block d-md-none col-md-4">
           <img class="img-fluid w-100" src="img/zone.png" alt="zone_image">
       </div>
       <div class="col-md-8 py-4">
@@ -128,4 +128,4 @@
   </div>
 </section>
 </div>
-<?php include("includes/footer.php") ?>
+<?php include("includes/footer.php"); ?>

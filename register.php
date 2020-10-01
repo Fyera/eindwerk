@@ -1,10 +1,8 @@
-<?php include("includes/header.php");
-  require_once('includes/database.php');
+<?php include("includes/header.php"); 
   $the_message = "";
   if($session->is_signed_in()){
     redirect("index.php");
   }
-
   if(isset($_POST['submit'])){
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
@@ -49,12 +47,14 @@
 ?>
 
 <div class="container px-5 mb-5">
-    <div class="row justify-content-center">
-      <div class="col-xl-10 col-lg-12 col-md-9">
-        <div class="card o-hidden border-0 card-custom shadow-lg my-5">
-            <div class="row">
-              <div class="col-lg-6 d-none d-lg-block"><img class="img-fluid w-100"src="./img/hordevsalliance.png" alt="hordevsalliance"></div>
-              <div class="col-lg-6">
+  <div class="row justify-content-center">
+    <div class="col-xl-10 col-lg-12 col-md-9">
+      <div class="card o-hidden border-0 card-custom shadow-lg my-5">
+        <div class="row">
+          <div class="col-lg-6 d-none d-lg-block">
+            <img class="img-fluid w-100"src="./img/hordevsalliance.png" alt="hordevsalliance">
+          </div>
+          <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Create a new Account</h1>
@@ -91,9 +91,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+        </div>
       </div>
     </div>
   </div>
-<?php include("includes/footer.php") ?>
+</div>
+<?php include("includes/footer.php"); ?>

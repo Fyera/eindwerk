@@ -1,4 +1,4 @@
-<?php require_once("init.php"); ?>
+<?php include("./includes/init.php"); ?>
 <?php ob_start(); ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@
     <title>Bootstrap Theme</title>
   </head>
 
-  <body">
+  <body>
   <div id="banner" class="page-header no-margin">
     <div class="container-fluid px-0">
       <div class="row">

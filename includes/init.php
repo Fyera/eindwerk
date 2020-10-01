@@ -1,6 +1,6 @@
 <?php
 defined('DS')?null:define('DS',DIRECTORY_SEPARATOR);
-define('SITE_ROOT',DS.'xampp'.DS.'htdocs'.DS.'php'.DS.'eindwerk');
+define('SITE_ROOT','.');
 defined('INCLUDES_PATH')?null:define('INCLUDES_PATH',SITE_ROOT.DS.'includes');
 defined('IMAGES_PATH')?null:define('IMAGES_PATH',SITE_ROOT.DS.'img');
 

@@ -1,11 +1,11 @@
 
-<!-- <footer id="footer">
+<footer id="footer">
   <div class="container">
     <div class="text-center">
       <p>Copyright &copy; <span id="year"></span> eindwerk - Michaël Van Laer</p>
     </div>
   </div>
-</footer> -->
+</footer>
 
 <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-caret-square-up"></i></a>
     <!-- TinyMCE -->
